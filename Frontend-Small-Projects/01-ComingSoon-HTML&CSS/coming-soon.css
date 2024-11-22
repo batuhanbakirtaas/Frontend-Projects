@@ -1,0 +1,90 @@
+/* General settings */
+body, html {
+    height: 100%; /* Ensures the body and HTML occupy full height */
+    margin: 0; /* Removes default margin */
+    font-family: "Raleway", sans-serif; /* Sets the font style */
+  }
+  
+  /* Background image styling */
+  .bgimg {
+    background-image: url('/Photo/nature1.jpg'); /* Replace with your image path */
+    min-height: 100%; /* Ensures the height covers the full screen */
+    background-position: center; /* Centers the image */
+    background-size: cover; /* Scales the image to cover the entire screen */
+  }
+  
+  /* Sets the text color to white */
+  .text-white {
+    color: white;
+  }
+  
+  /* Font size classes */
+  .xlarge {
+    font-size: 24px;
+  }
+  
+  .jumbo {
+    font-size: 64px;
+  }
+  
+  .large {
+    font-size: 20px;
+  }
+  
+  /* Animation for smooth opacity change */
+  .animate-opacity {
+    animation: fadeIn 2s; /* Uses fadeIn animation defined below */
+  }
+  
+  /* Animation for sliding in text */
+  .animate-top {
+    animation: slideIn 2s; /* Uses slideIn animation defined below */
+  }
+  
+  /* Container positioning */
+  .display-container {
+    position: relative; /* Positions elements relative to this container */
+    text-align: center; /* Centers text within this container */
+  }
+  
+  .display-topleft {
+    position: absolute; /* Positions element in the top-left corner */
+    top: 0;
+    left: 0;
+  }
+  
+  .display-middle {
+    position: absolute; /* Positions element in the center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the content horizontally and vertically */
+  }
+  
+  .display-bottomleft {
+    position: absolute; /* Positions element in the bottom-left corner */
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Border style for the separator line */
+  .border-grey {
+    border: 1px solid grey;
+  }
+  
+  /* Padding for spacing */
+  .padding-large {
+    padding: 16px;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {transform: translateY(-50px);}
+    to {transform: translateY(0);}
+  }
+  
